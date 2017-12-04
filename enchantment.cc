@@ -14,13 +14,13 @@ void Enchantment::play(Card *c){
 	card=c;
 	if (info == '+'){
 		splmt = stoi(suppliment);
-		c.getATK() += splmt;
-		c.getLP() += splmt;
+		c->getATK() += splmt;
+		c->etLP() += splmt;
 	}
 	else if (info == '*'){
 		splmt = stoi(suppliment);
-		c.getATK() *= splmt;
-		c.getLP() *= splmt;
+		c->getATK() *= splmt;
+		c->getLP() *= splmt;
 	}
 	else if (info == 't'){
 		splmt = stoi(suppliment);
@@ -28,9 +28,9 @@ void Enchantment::play(Card *c){
 	}
 	else if (info == 'c'){
 		splmt = stoi(suppliment);
-		c.getACost() += splmt;
+		c->getACost() += splmt;
 	}
 	else if (info == 's'){
-		c.getS() = false;
+		c->getS() = false;
 	}
 }
