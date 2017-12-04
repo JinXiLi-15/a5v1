@@ -12,7 +12,7 @@ class Spell:public Card{
 	bool destroy;
 	bool returnM;
 	bool gainCharge;
-	int chargeVal;
+	int chargeVal=0;
 	bool destroyEn;
 	bool necromacy;
 	bool allAtk;
